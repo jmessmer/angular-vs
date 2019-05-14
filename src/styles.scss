@@ -1,0 +1,11 @@
+///////////// Bootstrap 4 Grid + Reboot ///////////////////////
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-grid.min.css");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-reboot.min.css");
+/* 
+Replace the url imports above by ../node_modules folder imports
+in your local environment.
+I used this url imports, in stackblitz, to avoid the automatic
+importing of jquery and other unnecessary javascript libs
+*/
+
+/* Add application styles & imports after this! */

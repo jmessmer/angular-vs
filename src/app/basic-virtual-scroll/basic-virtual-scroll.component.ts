@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { emojiRandom } from '../emojis';
 import * as faker from 'faker';
 
 @Component({
@@ -15,10 +14,6 @@ export class BasicVirtualScrollComponent implements OnInit {
       .fill(1)
       .map(_ => {
         return {
-          //name: faker.name.findName(),
-         // bio: faker.hacker.phrase(),
-          //image: faker.image.cats(),
-          //emoji: emojiRandom(),
           image: faker.image.food(),
           name: faker.commerce.productName(),
           description: faker.lorem.sentence(),

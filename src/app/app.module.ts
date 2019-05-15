@@ -9,6 +9,7 @@ import { AppRoutingModule }     from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
+import { MainNavComponent } from './main-nav/main-nav.component';
 import { BasicScrollComponent } from './basic-scroll/basic-scroll.component';
 import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtual-scroll.component'
 
@@ -24,6 +25,7 @@ import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtua
   ],
   declarations: [
     AppComponent,
+    MainNavComponent,
     BasicScrollComponent,
     BasicVirtualScrollComponent
   ],

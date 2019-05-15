@@ -1,5 +1,6 @@
 <ng-container>
   <cdk-virtual-scroll-viewport itemSize="100">
+    <div class="spacer"></div>
     <mat-card class="example-card" *cdkVirtualFor="let p of products;">
       <mat-card-header>
         <mat-card-title>{{ p.name }}</mat-card-title>

@@ -8,6 +8,10 @@ cdk-virtual-scroll-viewport {
   justify-content: center;
   list-style: none;
 
+  .spacer {
+    margin-top: 20px;
+  }
+
   .example-card {
     max-width: 400px;
     margin-bottom: 20px;

@@ -13,14 +13,6 @@ cdk-virtual-scroll-viewport {
     margin-bottom: 20px;
   }
 
-  li {
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-    background: whitesmoke;
-
-    box-shadow: 2px 2px 3px rgba($color: #888888, $alpha: 0.2);
-  }
   &::-webkit-scrollbar {
     width: 1em;
   }

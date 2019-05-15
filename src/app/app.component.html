@@ -8,25 +8,25 @@
     <mat-sidenav #snav color="accent" [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56"  [opened]="mobileQuery.matches ? 'false' : 'true'">
       <mat-nav-list>
         <div class="nav-link-group">
-          <a mat-list-item routerLink="/dashboard">
+          <a mat-list-item routerLink="/dashboard" routerLinkActive="active-list-item">
             <mat-icon class="collapse-icon vcenter" mat-list-icon>dashboard</mat-icon>
             Dashboard
           </a>
-          <a mat-list-item routerLink="/basic">
+          <a mat-list-item routerLink="/basic" routerLinkActive="active-list-item">
             <mat-icon class="collapse-icon vcenter" mat-list-icon>list</mat-icon>
             Basic Scrolling
           </a>
-          <a mat-list-item routerLink="/basic-pagination" class="sub-nav-link">
+          <a mat-list-item routerLink="/basic-pagination" routerLinkActive="active-list-item" class="sub-nav-link">
             <mat-icon class="collapse-icon vcenter" mat-list-icon>view_list</mat-icon>
             Basic Pagination Scrolling
           </a>
-          <a mat-list-item routerLink="/basicvs">
+          <a mat-list-item routerLink="/basicvs" routerLinkActive="active-list-item">
             <mat-icon class="collapse-icon vcenter" mat-list-icon>line_weight</mat-icon>
             Basic Virtual Scrolling
           </a>
         </div>
         <div class="nav-link-group">
-          <a mat-list-item routerLink="/aggrid">
+          <a mat-list-item routerLink="/aggrid" routerLinkActive="active-list-item">
             <mat-icon class="collapse-icon vcenter" mat-list-icon>view_module</mat-icon>
             AG-Grid Scrolling
           </a>

@@ -11,3 +11,7 @@ importing of jquery and other unnecessary javascript libs
 /* Add application styles & imports after this! */
 @import "~ag-grid-community/dist/styles/ag-grid.css";
 @import "~ag-grid-community/dist/styles/ag-theme-material.css";
+
+.active-list-item {
+  color: #ff4081 !important;
+}

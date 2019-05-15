@@ -7,6 +7,12 @@ cdk-virtual-scroll-viewport {
     flex-direction: column;
     justify-content: center;
     list-style: none;
+
+    .example-card {
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+
     li {
       height: 100px;
       margin: 10px;

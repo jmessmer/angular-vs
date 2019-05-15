@@ -1,13 +1,16 @@
 <ng-container>
 	<cdk-virtual-scroll-viewport itemSize="100">
-		<mat-card *cdkVirtualFor="let p of people;">
-      <mat-card-header>
-        <mat-icon>{{ p.image }}</mat-icon>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>{{ p.name }}</mat-card-title>
-        <mat-card-subtitle>{{ p.bio }}</mat-card-subtitle>
-      </mat-card-header>
-    </mat-card>
+		<mat-card *cdkVirtualFor="let p of products;">
+			<mat-card-header>
+				<mat-card-title>{{ p.name }}</mat-card-title>
+				<mat-card-subtitle>{{ p.description }}</mat-card-subtitle>
+			</mat-card-header>
+			<mat-card-content>
+				<p>Cost: {{ p.price | currency }}</p>
+        <p>Weight: {{ p.weight }}</p>
+        <p>Quantity: {{ p.quantity }}</p>
+			</mat-card-content>
+		</mat-card>
 
 		<!--<li *cdkVirtualFor="let p of people;" class="animated slideInRight">
     <h2>{{ p.emoji }} {{ p.name }}</h2>

@@ -8,10 +8,10 @@ import * as faker from 'faker';
   styleUrls: ['./basic-virtual-scroll.component.scss']
 })
 export class BasicVirtualScrollComponent implements OnInit {
-  people;
+  products;
 
   constructor() {
-    this.people = Array(100)
+    this.products = Array(100)
       .fill(1)
       .map(_ => {
         return {

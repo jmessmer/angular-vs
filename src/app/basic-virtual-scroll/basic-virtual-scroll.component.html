@@ -5,11 +5,12 @@
 				<mat-card-title>{{ p.name }}</mat-card-title>
 				<mat-card-subtitle>{{ p.description }}</mat-card-subtitle>
 			</mat-card-header>
-			<mat-card-content>
-				<p><b>Cost:</b> {{ p.price | currency }} <b>Weight:</b> {{ p.weight }} <b>Quantity:</b> {{ p.quantity }}</p>
+      <mat-divider [inset]="true"></mat-divider>
+			<mat-card-content>        
+				<p><p><b>Cost:</b> {{ p.price | currency }} <b>Weight:</b> {{ p.weight }} <b>Quantity:</b> {{ p.quantity }}</p>
 			</mat-card-content>
       <mat-card-actions>
-        <button mat-button>ADD TO CART</button>
+        <button mat-raised-button color="primary">ADD TO CART</button>
       </mat-card-actions>
 		</mat-card>
 	</cdk-virtual-scroll-viewport>

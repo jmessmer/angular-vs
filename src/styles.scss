@@ -8,4 +8,6 @@ I used this url imports, in stackblitz, to avoid the automatic
 importing of jquery and other unnecessary javascript libs
 */
 
-/* Add application styles & imports after this! hello */
+/* Add application styles & imports after this! */
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-material.css";

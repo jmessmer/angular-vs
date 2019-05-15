@@ -5,7 +5,7 @@ import * as faker from 'faker';
 @Component({
   selector: 'app-ag-grid-scroll',
   templateUrl: './ag-grid-scroll.component.html',
-  styleUrls: ['./ag-grid-scroll.component.css']
+  styleUrls: ['./ag-grid-scroll.component.scss']
 })
 export class AgGridScrollComponent implements OnInit {
     private gridOptions: GridOptions;

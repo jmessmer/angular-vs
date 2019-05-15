@@ -8,6 +8,10 @@
     <mat-sidenav #snav color="accent" [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56"  [opened]="mobileQuery.matches ? 'false' : 'true'">
       <mat-nav-list>
         <div class="nav-link-group">
+          <a mat-list-item routerLink="/basic">
+            <mat-icon class="collapse-icon vcenter" mat-list-icon>view_list</mat-icon>
+            Basic Scrolling
+          </a>
           <a mat-list-item routerLink="/basicvs">
             <mat-icon class="collapse-icon vcenter" mat-list-icon>view_list</mat-icon>
             Basic Virtual Scrolling

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BasicScrollComponent } from './basic-scroll/basic-scroll.component';
+import { BasicPaginationScrollComponent } from './basic-pagination-scroll/basic-pagination-scroll.component'
 import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtual-scroll.component';
 import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component';
 
@@ -10,6 +11,7 @@ import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'basic', component: BasicScrollComponent },
+  { path: 'basic-pagination', component: BasicPaginationScrollComponent },
   { path: 'basicvs', component: BasicVirtualScrollComponent },
   { path: 'aggrid', component: AgGridScrollComponent }
 ];

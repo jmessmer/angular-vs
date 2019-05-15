@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { Product } from './product';
 import * as faker from 'faker';
 
@@ -20,6 +21,10 @@ export class CommerceProductService {
           quantity: faker.random.number({ min: 0, max: 5 }),
         };
       });    
+  }
+
+  getProductsByOffSet(offset: number, limit: number): Observable<Product[]> {
+    return of(this.getProducts(100).slice(offset, offset + limit));
   }
 
 }

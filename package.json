@@ -9,6 +9,7 @@
     "@angular/compiler": "^7.2.7",
     "@angular/compiler-cli": ">=2.1.x",
     "@angular/core": "^7.2.7",
+    "@angular/flex-layout": "^7.0.0-beta.24",
     "@angular/forms": "^7.2.7",
     "@angular/material": "^7.3.3",
     "@angular/platform-browser": "^7.2.7",

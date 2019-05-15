@@ -8,6 +8,10 @@
     <mat-sidenav #snav color="accent" [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56"  [opened]="mobileQuery.matches ? 'false' : 'true'">
       <mat-nav-list>
         <div class="nav-link-group">
+          <a mat-list-item routerLink="/dashboard">
+            <mat-icon class="collapse-icon vcenter" mat-list-icon>dashboard</mat-icon>
+            Dashboard
+          </a>
           <a mat-list-item routerLink="/basic">
             <mat-icon class="collapse-icon vcenter" mat-list-icon>list</mat-icon>
             Basic Scrolling
@@ -17,10 +21,6 @@
             Basic Virtual Scrolling
           </a>
           <a mat-list-item routerLink="." class="sub-nav-link">Basic 2 Virtual Scrolling</a>
-        </div>
-        <div class="nav-link-group">
-          <a mat-list-item routerLink=".">Basic 3 Virtual Scrolling</a>
-          <a mat-list-item routerLink="." class="sub-nav-link">Basic 4 Virtual Scrolling</a>
         </div>
         <div class="nav-link-group">
           <a mat-list-item routerLink="/aggrid">

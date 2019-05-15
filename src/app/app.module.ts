@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { MainNavComponent } from './main-nav/main-nav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { BasicScrollComponent } from './basic-scroll/basic-scroll.component';
 import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtual-scroll.component';
 import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component'
@@ -30,6 +31,7 @@ import { CommerceProductService } from './service/commerce-product.service';
   declarations: [
     AppComponent,
     MainNavComponent,
+    DashboardComponent,
     BasicScrollComponent,
     BasicVirtualScrollComponent,
     AgGridScrollComponent

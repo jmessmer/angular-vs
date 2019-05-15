@@ -16,6 +16,11 @@ import { BasicPaginationScrollComponent } from './basic-pagination-scroll/basic-
 import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtual-scroll.component';
 import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component'
 
+import { HammerCardComponent } from './hammer-card/hammer-card.component'
+import { HammerTimeDirective } from './directive/hammer-time.directive';
+
+import * as Hammer from 'hammerjs';
+
 import { CommerceProductService } from './service/commerce-product.service';
 
 @NgModule({
@@ -36,7 +41,9 @@ import { CommerceProductService } from './service/commerce-product.service';
     BasicScrollComponent,
     BasicPaginationScrollComponent,
     BasicVirtualScrollComponent,
-    AgGridScrollComponent
+    AgGridScrollComponent,
+    HammerCardComponent,
+    HammerTimeDirective
   ],
   providers: [
     CommerceProductService

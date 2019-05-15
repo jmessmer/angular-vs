@@ -5,13 +5,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MaterialsModule } from './materials.module';
 
-import { AppRoutingModule }     from './app-routing.module';
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { BasicScrollComponent } from './basic-scroll/basic-scroll.component';
-import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtual-scroll.component'
+import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtual-scroll.component';
+
+import { CommerceProductService } from './service/commerce-product.service';
 
 @NgModule({
   imports: [
@@ -29,7 +30,9 @@ import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtua
     BasicScrollComponent,
     BasicVirtualScrollComponent
   ],
-  providers: [],
+  providers: [
+    CommerceProductService
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

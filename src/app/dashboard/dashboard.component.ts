@@ -26,7 +26,7 @@ export class DashboardComponent implements OnInit {
         routerLink: '/basicvs'
       },
       {
-        name: 'agGrid',
+        name: 'agGrid Virtual Scrolling',
         description: 'Knave quarterdeck run a shot across the bow broadside loaded to the gunwalls main sheet crimp fluke deadlights list. Bilge rat square-rigged fore sloop sutler rope\'s end bowsprit piracy nipperkin to go on account. Brigantine measured fer yer chains doubloon bucko Corsair me grog blossom avast Plate Fleet matey.',
         routerLink: '/aggrid'
       }

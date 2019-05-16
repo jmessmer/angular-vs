@@ -1,21 +1,7 @@
-<!--<div style="text-align:center">
-	<div>
-		<webcam [height]="500" [width]="500" [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"
-		 [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable" [videoOptions]="videoOptions" (cameraSwitched)="cameraWasSwitched($event)"
-		 (initError)="handleInitError($event)"></webcam>
-		<br/>
-    <button mat-raised-button
-            color="primary"
-            (click)="triggerSnapshot();">
-            Take Picture
-    </button>
-	</div>
-</div>-->
 <mat-accordion class="example-headers-align">
   <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Avatar
       </mat-panel-title>
       <mat-panel-description>
         Take your picture

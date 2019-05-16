@@ -8,7 +8,6 @@ import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
 })
 export class AppComponent  implements OnDestroy {
   mobileQuery: MediaQueryList;
-  title = 'Quantifying Large List';
 
   private _mobileQueryListener: () => void;
 

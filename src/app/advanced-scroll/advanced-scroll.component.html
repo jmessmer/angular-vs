@@ -1,9 +1,12 @@
+    
 <cdk-virtual-scroll-viewport class="example-viewport" itemSize="60">
-	<dl class="example-dl">
+	<div style="margin-top: 20px;">
 		<ng-container *cdkVirtualFor="let p of products">
-			<dt class="example-dt"><mat-checkbox class="checkbox-style">{{p.name}}</mat-checkbox></dt>
-			<dd class="example-dd">
-				<mat-card class="example-card">
+			<dt class="example-card">
+				<mat-checkbox class="checkbox-style">{{p.name}}</mat-checkbox>
+			</dt>
+			<dd class="example-card">
+				<mat-card>
 					<mat-card-header>
 						<mat-card-subtitle>{{ p.description }}</mat-card-subtitle>
 					</mat-card-header>
@@ -15,5 +18,5 @@
 		</mat-card>
       </dd>
     </ng-container>
-  </dl>
+    </div>
 </cdk-virtual-scroll-viewport>

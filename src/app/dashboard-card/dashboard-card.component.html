@@ -1,10 +1,6 @@
 <mat-card class="example-card"          
           [@cardAnimator]="animationState" 
-          (@cardAnimator.done)="resetAnimationState()"
-          (swipeleft)="startAnimation('slideOutLeft')"
-          (swiperight)="startAnimation('zoomOutRight')"
-          (swipeup)="startAnimation('rotateOutUpRight')"
-          (swipedown)="startAnimation('flipOutY')">
+          (@cardAnimator.done)="resetAnimationState()">
   <mat-card-header>
     <mat-card-title>{{ dashboard.name }}</mat-card-title>
     <mat-card-subtitle>{{ dashboard.description }}</mat-card-subtitle>

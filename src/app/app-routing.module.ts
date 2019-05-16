@@ -8,7 +8,7 @@ import { BasicInfiniteScrollComponent } from './basic-infinite-scroll/basic-infi
 import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtual-scroll.component';
 import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component';
 import { AdvancedScrollComponent} from './advanced-scroll/advanced-scroll.component';
-
+import { BasicAvatarScrollComponent } from './basic-avatar-scroll/basic-avatar-scroll.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard',  pathMatch: 'full' },
@@ -18,7 +18,8 @@ const routes: Routes = [
   { path: 'basic-infinite', component: BasicInfiniteScrollComponent },
   { path: 'basicvs', component: BasicVirtualScrollComponent },
   { path: 'aggrid', component: AgGridScrollComponent },
-  { path: 'advancedscroll', component: AdvancedScrollComponent}
+  { path: 'advancedscroll', component: AdvancedScrollComponent },
+  { path: 'basic-avatar', component: BasicAvatarScrollComponent }
 ];
 
 @NgModule({

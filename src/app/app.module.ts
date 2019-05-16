@@ -18,6 +18,7 @@ import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component
 
 import { HammerCardComponent } from './hammer-card/hammer-card.component'
 import { HammerTimeDirective } from './directive/hammer-time.directive';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 import * as Hammer from 'hammerjs';
 
@@ -43,7 +44,8 @@ import { CommerceProductService } from './service/commerce-product.service';
     BasicVirtualScrollComponent,
     AgGridScrollComponent,
     HammerCardComponent,
-    HammerTimeDirective
+    HammerTimeDirective,
+    ProductCardComponent
   ],
   providers: [
     CommerceProductService

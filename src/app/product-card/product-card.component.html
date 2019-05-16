@@ -1,0 +1,19 @@
+<mat-card class="example-card"
+          [@cardAnimator]="animationState" 
+          (@cardAnimator.done)="resetAnimationState()"
+          (swipeleft)="startAnimation('slideOutLeft')"
+          (swiperight)="startAnimation('zoomOutRight')"
+          (swipeup)="startAnimation('rotateOutUpRight')"
+          (swipedown)="startAnimation('flipOutY')">
+  <mat-card-header>
+    <mat-card-title>{{ product.name }}</mat-card-title>
+    <mat-card-subtitle>{{ product.description }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-divider [inset]="true"></mat-divider>
+  <mat-card-content>        
+    <p><p><b>Cost:</b> {{ product.price | currency }} <b>Weight:</b> {{ product.weight }} <b>Quantity:</b> {{ product.quantity }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent" (tap)="startAnimation('wobble')">ADD TO CART</button>
+  </mat-card-actions>
+</mat-card>

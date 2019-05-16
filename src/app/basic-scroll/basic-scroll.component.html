@@ -1,19 +1,5 @@
-<ng-container>
-  <div class="basic-scroll-container">
-    <ng-container *ngFor="let p of products;">   
-      <mat-card class="example-card" >
-        <mat-card-header>
-          <mat-card-title>{{ p.name }}</mat-card-title>
-          <mat-card-subtitle>{{ p.description }}</mat-card-subtitle>
-        </mat-card-header>
-        <mat-divider [inset]="true"></mat-divider>
-        <mat-card-content>        
-          <p><p><b>Cost:</b> {{ p.price | currency }} <b>Weight:</b> {{ p.weight }} <b>Quantity:</b> {{ p.quantity }}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button color="accent">ADD TO CART</button>
-        </mat-card-actions>
-      </mat-card>
-    </ng-container>
-  </div>
-</ng-container>
+<div class="basic-scroll-container">
+  <ng-container *ngFor="let product of products;"> 
+    <app-product-card class="product-card" [product]="product"></app-product-card> 
+  </ng-container>
+</div>

@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { trigger, keyframes, animate, transition } from '@angular/animations';
 import * as kf from '../keyframes';
+import { Product } from '../service/product';
 
 @Component({
-  selector: 'app-hammer-card',
-  templateUrl: './hammer-card.component.html',
-  styleUrls: ['./hammer-card.component.scss'],
+  selector: 'app-product-card',
+  templateUrl: './product-card.component.html',
+  styleUrls: ['./product-card.component.scss'],
   animations: [
     trigger('cardAnimator', [
       transition('* => wobble', animate(1000, keyframes(kf.wobble))),
@@ -18,12 +19,13 @@ import * as kf from '../keyframes';
     ])
   ]
 })
-export class HammerCardComponent implements OnInit {
+export class ProductCardComponent implements OnInit {
+
+  @Input() product: Product;
 
   animationState: string;
 
   startAnimation(state) {
-    console.log(state)
     if (!this.animationState) {
       this.animationState = state;
     }

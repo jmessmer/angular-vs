@@ -6,17 +6,15 @@
   margin: 1vh auto;
   margin-top: 20px;
 
-  .example-card {
-    width: 400px;
-    margin-bottom: 20px;
+  .product-card {
+    width: 100%;
   }
-
 }
 .nav-buttons{
   display: flex;
   justify-content: space-between;
   margin: 1vh auto;
-  width: 400px;
+  max-width: 400px;
   button {
     width: 100px;
   }

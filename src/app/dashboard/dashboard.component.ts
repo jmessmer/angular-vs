@@ -7,7 +7,7 @@ import { Dashboard } from './dashboard';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  dashboards: Dashboard;
+  dashboards: Array<Dashboard>;
 
   constructor() { 
     this.dashboards = [
@@ -32,14 +32,19 @@ export class DashboardComponent implements OnInit {
         routerLink: '/basicvs'
       },
       {
+        name: 'Advanced Virtual Scrolling',
+        description: 'Jack Tar aft interloper bilge reef parrel scuttle cutlass ballast quarterdeck chase guns walk the plank hornswaggle jury mast crow’s nest. Lugger wench pillage ye case shot chantey topgallant maroon Sail ho brigantine rutters lateen sail yawl Nelsons folly bilge',
+        routerLink: '/advancedscroll'
+      },
+      {
         name: 'agGrid Virtual Scrolling',
         description: 'Knave quarterdeck run a shot across the bow broadside loaded to the gunwalls main sheet crimp fluke deadlights list. Bilge rat square-rigged fore sloop sutler rope\'s end bowsprit piracy nipperkin to go on account. Brigantine measured fer yer chains doubloon bucko Corsair me grog blossom avast Plate Fleet matey.',
         routerLink: '/aggrid'
       },
       {
-        name: 'Advanced Virtual Scrolling',
-        description: 'Jack Tar aft interloper bilge reef parrel scuttle cutlass ballast quarterdeck chase guns walk the plank hornswaggle jury mast crow’s nest. Lugger wench pillage ye case shot chantey topgallant maroon Sail ho brigantine rutters lateen sail yawl Nelsons folly bilge',
-        routerLink: '/advancedscroll'
+        name: 'Avatar Virtual Scrolling',
+        description: 'Letter of Marque draught hearties long clothes fire ship Jolly Roger aft landlubber or just lubber grog Sea Legs. Provost parrel bilge scuttle yard hulk quarterdeck gabion Cat o\'nine tails haul wind. Careen bilged on her anchor pinnace fore chase jury mast tender weigh anchor boom bilge.',
+        routerLink: '/basic-avatar'
       }
     ];
   }

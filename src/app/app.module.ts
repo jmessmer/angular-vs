@@ -16,7 +16,8 @@ import { BasicScrollComponent } from './basic-scroll/basic-scroll.component';
 import { BasicPaginationScrollComponent } from './basic-pagination-scroll/basic-pagination-scroll.component';
 import { BasicInfiniteScrollComponent } from './basic-infinite-scroll/basic-infinite-scroll.component';
 import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtual-scroll.component';
-import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component'
+import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component';
+import { AdvancedScrollComponent } from './advanced-scroll/advanced-scroll.component';
 
 import { ProductCardComponent } from './product-card/product-card.component';
 
@@ -45,7 +46,8 @@ import { CommerceProductService } from './service/commerce-product.service';
     BasicInfiniteScrollComponent,
     BasicVirtualScrollComponent,
     AgGridScrollComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    AdvancedScrollComponent
   ],
   providers: [
     CommerceProductService

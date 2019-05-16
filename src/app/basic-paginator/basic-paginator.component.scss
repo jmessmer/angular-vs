@@ -1,0 +1,12 @@
+.nav-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  button {
+    width: 100px;
+  }
+  span {
+    display: flex;
+    align-items: center;
+  }
+}

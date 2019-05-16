@@ -9,7 +9,7 @@ export class CommerceProductService {
   constructor() { }
 
   getProducts(size: number): Array<Product> {
-    return Array(100)
+    return Array(size)
       .fill(1)
       .map(_ => {
         return {

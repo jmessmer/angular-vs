@@ -22,11 +22,19 @@ export class BasicPaginationScrollComponent implements OnInit {
       });
   }
 
-  public getPrevious(): void {
+  disablePrevious(): boolean {
+    return this.currentOffset === 0;
+  }
+
+  disableNext(): boolean {
+    return this.currentOffset + this.currentLimit >= this.currentTotal;
+  }
+
+  getPrevious(): void {
     this.getProducts(this.currentOffset - this.currentLimit, this.currentLimit);
   }
 
-  public getNext(): void {
+  getNext(): void {
     this.getProducts(this.currentOffset + this.currentLimit, this.currentLimit);
   }
 

@@ -10,18 +10,39 @@ import * as _ from "lodash";
 })
 export class AgGridScrollComponent implements OnInit {
     private gridOptions: GridOptions;
-    private workers;
+    private products;
 
   constructor() {
     let self = this;
     this.gridOptions = <GridOptions>{};
     this.gridOptions.columnDefs = [
         {
-            headerName: "Worker",
+            headerName: "Name",
             field: "name",
-            width: 354
+            width: 200
+        },
+        {
+            headerName: "Description",
+            field: "description",
+            width: 100
+        },
+        {
+            headerName: "Price",
+            field: "price",
+            width: 100
+        },
+        {
+            headerName: "Weight",
+            field: "weight",
+            width: 100
+        },
+        {
+            headerName: "Quatity",
+            field: "quantity",
+            width: 100
         }
     ];
+    //Hide the overlay
     let hideOverlay = _.debounce(function hide() {
       self.gridOptions.api.hideOverlay();
     }, 100);
@@ -34,20 +55,24 @@ export class AgGridScrollComponent implements OnInit {
     };    
 
     this.gridOptions.pagination = true;
-    this.workers = Array(200)
+    this.products = Array(200)
     .fill(1)
     .map(_ => {
       return {
-        name: faker.name.lastName() + ", " + faker.name.firstName()
+          name: faker.commerce.productName(),
+          description: faker.lorem.sentence(),
+          price: faker.commerce.price(1, 100),
+          weight: faker.random.number({ min: 1, max: 10, precision: 0.01 }),
+          quantity: faker.random.number({ min: 0, max: 5 }),
       };
     });
-    this.gridOptions.rowData = this.workers.sort(function sortByLastName(person1, person2) {
-      let lastName1 = person1.name.split(',')[0].toUpperCase();
-      let lastName2 = person2.name.split(',')[0].toUpperCase();
-        if (lastName1 < lastName2) {
+    this.gridOptions.rowData = this.products.sort(function sortByLastName(products1, products2) {
+      let name1 = products1.name.split(" ")[0].toUpperCase();
+      let name2 = products2.name.split(" ")[0].toUpperCase();
+        if (name1 < name2) {
           return -1;
         }
-        if (lastName1 > lastName2) {
+        if (name1 > name2) {
           return 1;
         }
         return 0;

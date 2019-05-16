@@ -20,6 +20,7 @@ import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component
 import { AdvancedScrollComponent } from './advanced-scroll/advanced-scroll.component';
 
 import { ProductCardComponent } from './product-card/product-card.component';
+import { DashboardCardComponent } from './dashboard-card/dashboard-card.component';
 
 import * as Hammer from 'hammerjs';
 
@@ -47,7 +48,8 @@ import { CommerceProductService } from './service/commerce-product.service';
     BasicVirtualScrollComponent,
     AgGridScrollComponent,
     ProductCardComponent,
-    AdvancedScrollComponent
+    AdvancedScrollComponent,
+    DashboardCardComponent
   ],
   providers: [
     CommerceProductService

@@ -10,6 +10,7 @@ import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component
 
 
 const routes: Routes = [
+  { path: '', redirectTo: '/dashboard',  pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'basic', component: BasicScrollComponent },
   { path: 'basic-pagination', component: BasicPaginationScrollComponent },

@@ -1,18 +1,6 @@
-<ng-container>
-  <cdk-virtual-scroll-viewport itemSize="100">
-    <div class="spacer"></div>
-    <mat-card class="example-card" *cdkVirtualFor="let p of products;">
-      <mat-card-header>
-        <mat-card-title>{{ p.name }}</mat-card-title>
-        <mat-card-subtitle>{{ p.description }}</mat-card-subtitle>
-      </mat-card-header>
-      <mat-divider [inset]="true"></mat-divider>
-      <mat-card-content>        
-        <p><p><b>Cost:</b> {{ p.price | currency }} <b>Weight:</b> {{ p.weight }} <b>Quantity:</b> {{ p.quantity }}</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button color="accent">ADD TO CART</button>
-      </mat-card-actions>
-    </mat-card>
-  </cdk-virtual-scroll-viewport>
-</ng-container>
+<cdk-virtual-scroll-viewport itemSize="100">
+  <div class="spacer"></div>
+  <ng-container *cdkVirtualFor="let product of products;"> 
+    <app-product-card class="product-card" [product]="product"></app-product-card> 
+  </ng-container>
+</cdk-virtual-scroll-viewport>

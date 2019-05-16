@@ -21,12 +21,17 @@ export class DashboardComponent implements OnInit {
         routerLink: '/basic-pagination'
       },
       {
+        name: 'Basic Infinite Scrolling',
+        description: 'Salmagundi flogging Plate Fleet Sea Legs pressgang wherry scourge of the seven seas long clothes red ensign starboard. No prey, no pay snow Nelsons folly lee lateen sail boom ho sloop scuppers knave. Yawl measured fer yer chains hearties Admiral of the Black cog pink parley lad chantey sutler.',
+        routerLink: '/basic-infinite'
+      },
+      {
         name: 'Basic Virtual Scrolling',
         description: 'Gabion tender rigging galleon fore lugger bilge water overhaul case shot list. Hang the jib sutler Jolly Roger Jack Tar maroon trysail chantey jack lee snow. Rum bilge water measured fer yer chains jolly boat lee take a caulk wherry jack trysail six pounders',
         routerLink: '/basicvs'
       },
       {
-        name: 'agGrid',
+        name: 'agGrid Virtual Scrolling',
         description: 'Knave quarterdeck run a shot across the bow broadside loaded to the gunwalls main sheet crimp fluke deadlights list. Bilge rat square-rigged fore sloop sutler rope\'s end bowsprit piracy nipperkin to go on account. Brigantine measured fer yer chains doubloon bucko Corsair me grog blossom avast Plate Fleet matey.',
         routerLink: '/aggrid'
       }

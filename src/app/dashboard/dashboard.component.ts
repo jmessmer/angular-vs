@@ -35,6 +35,11 @@ export class DashboardComponent implements OnInit {
         name: 'agGrid Virtual Scrolling',
         description: 'Knave quarterdeck run a shot across the bow broadside loaded to the gunwalls main sheet crimp fluke deadlights list. Bilge rat square-rigged fore sloop sutler rope\'s end bowsprit piracy nipperkin to go on account. Brigantine measured fer yer chains doubloon bucko Corsair me grog blossom avast Plate Fleet matey.',
         routerLink: '/aggrid'
+      },
+      {
+        name: 'Advanced Virtual Scrolling',
+        description: 'Jack Tar aft interloper bilge reef parrel scuttle cutlass ballast quarterdeck chase guns walk the plank hornswaggle jury mast crow’s nest. Lugger wench pillage ye case shot chantey topgallant maroon Sail ho brigantine rutters lateen sail yawl Nelsons folly bilge',
+        routerLink: '/advancedscroll'
       }
     ];
   }

@@ -4,10 +4,13 @@
       <app-product-card class="product-card" [product]="product"></app-product-card> 
     </ng-container>
   </div>
-  <div class="nav-buttons" *ngIf="visibleProducts.length">
-    <button [disabled]="disablePrevious()" mat-raised-button color="primary" (click)="getPrevious()">Previous</button>
-    <span>{{this.currentOffset}} through {{this.currentOffset + this.currentLimit}}</span>
-    <button [disabled]="disableNext()" mat-raised-button color = "primary" (click)="getNext()">Next</button>
-  </div>
-  <div *ngIf="!visibleProducts.length">No products to display</div>
+  <app-basic-paginator
+    [disablePrevious]="currentOffset === 0"
+    [disableNext]="currentOffset + currentLimit >= currentTotal"
+    [offset]="currentOffset"
+    [limit]="currentLimit"
+    [getPrevious]="getPrevious.bind(this)"
+    [getNext]="getNext.bind(this)"
+    [total]="currentTotal">
+  </app-basic-paginator>
 </ng-container>

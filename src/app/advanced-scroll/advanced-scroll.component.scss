@@ -1,24 +1,13 @@
-.example-viewport {
+cdk-virtual-scroll-viewport {
   height: 100%;
-  width: aut;
-  margin: auto;
 }
-
-.example-dt {
-  height: auto;
-  font-weight: bold;
-  margin-left: 30px;
-}
-
-.example-dd {
-  margin-left: 50px;
-}
-
 .example-card {
     max-width: 400px;
-    margin-bottom: 20px;
+    margin: auto;
 }
-
+.example-card-content {
+  margin-bottom: 15px;
+}
 .checkbox-style {
   color: #ff4081;
 }

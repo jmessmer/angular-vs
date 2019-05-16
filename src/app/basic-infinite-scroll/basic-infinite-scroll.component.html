@@ -1,0 +1,7 @@
+<div class="basic-scroll-container">
+  <div infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50" (scrolled)="onScrollDown()">
+      <ng-container *ngFor="let product of infiniteProducts;"> 
+        <app-product-card class="product-card" [product]="product"></app-product-card> 
+      </ng-container>
+  </div>
+</div>

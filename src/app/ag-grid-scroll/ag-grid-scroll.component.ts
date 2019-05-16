@@ -19,7 +19,9 @@ export class AgGridScrollComponent implements OnInit {
         {
             headerName: "Name",
             field: "name",
-            width: 200
+            width: 200,
+            sortable: true,
+            filter: "agTextColumnFilter"
         },
         {
             headerName: "Description",
@@ -29,7 +31,9 @@ export class AgGridScrollComponent implements OnInit {
         {
             headerName: "Price",
             field: "price",
-            width: 100
+            width: 100,
+            sortable: true,
+            filter: "agNumberColumnFilter"
         },
         {
             headerName: "Weight",
@@ -55,7 +59,7 @@ export class AgGridScrollComponent implements OnInit {
     };    
 
     this.gridOptions.pagination = true;
-    this.products = Array(200)
+    this.products = Array(1000)
     .fill(1)
     .map(_ => {
       return {

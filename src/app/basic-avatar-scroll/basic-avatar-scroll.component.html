@@ -1,0 +1,18 @@
+<app-camera (pictureTaken)="handleImage($event)"></app-camera>
+
+<cdk-virtual-scroll-viewport itemSize="100">
+  <div class="spacer"></div>
+  <ng-container *cdkVirtualFor="let person of persons;"> 
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="snapshot" *ngIf="webcamImage">
+          <img mat-card-avatar [src]="webcamImage.imageAsDataUrl">
+        </div>
+        <mat-card-title>{{ person.card.name }}</mat-card-title>
+        <mat-card-subtitle>{{ person.card.email }}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </ng-container>
+</cdk-virtual-scroll-viewport>
+
+

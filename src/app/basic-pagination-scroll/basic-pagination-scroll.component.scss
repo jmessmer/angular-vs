@@ -1,21 +1,9 @@
 .basic-pagination-scroll-container {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin: 1vh auto;
   margin-top: 20px;
-
-  .product-card {
-    width: 100%;
-  }
 }
-.nav-buttons{
+app-basic-paginator{
   display: flex;
-  justify-content: space-between;
   margin: 1vh auto;
-  max-width: 400px;
-  button {
-    width: 100px;
-  }
 }

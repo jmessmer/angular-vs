@@ -2,9 +2,11 @@
   <mat-toolbar color="primary" class="example-toolbar">
     <mat-toolbar-row>
       <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
-      <h1 class="example-app-name">{{title}}</h1>
+      <i class="fas fa-rocket"></i>
+      <h1 class="example-app-name">uanching Large Lists</h1>
       <span class="example-spacer"></span>
-      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
+      <i class="fab fa-fw fa-twitter"></i>
+      <i class="fab fa-fw fa-github"></i>
     </mat-toolbar-row>
   </mat-toolbar>
 
@@ -38,6 +40,10 @@
           <a mat-list-item routerLink="/basicvs" routerLinkActive="active-list-item">
             <mat-icon class="collapse-icon vcenter" mat-list-icon>line_weight</mat-icon>
             Basic
+          </a>
+          <a mat-list-item routerLink="/advancedscroll" routerLinkActive="active-list-item" class="sub-nav-link">
+            <mat-icon class="collapse-icon vcenter" mat-list-icon>view_day</mat-icon>
+            Advanced
           </a>
           <a mat-list-item routerLink="/aggrid" routerLinkActive="active-list-item">
             <mat-icon class="collapse-icon vcenter" mat-list-icon>view_module</mat-icon>

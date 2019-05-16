@@ -7,6 +7,7 @@ import { BasicPaginationScrollComponent } from './basic-pagination-scroll/basic-
 import { BasicInfiniteScrollComponent } from './basic-infinite-scroll/basic-infinite-scroll.component';
 import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtual-scroll.component';
 import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component';
+import { AdvancedScrollComponent} from './advanced-scroll/advanced-scroll.component';
 
 
 const routes: Routes = [
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'basic-pagination', component: BasicPaginationScrollComponent },
   { path: 'basic-infinite', component: BasicInfiniteScrollComponent },
   { path: 'basicvs', component: BasicVirtualScrollComponent },
-  { path: 'aggrid', component: AgGridScrollComponent }
+  { path: 'aggrid', component: AgGridScrollComponent },
+  { path: 'advancedscroll', component: AdvancedScrollComponent}
 ];
 
 @NgModule({

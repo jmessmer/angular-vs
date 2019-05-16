@@ -1,0 +1,21 @@
+<mat-card class="example-card"          
+          [@cardAnimator]="animationState" 
+          (@cardAnimator.done)="resetAnimationState()"
+          (swipeleft)="startAnimation('slideOutLeft')"
+          (swiperight)="startAnimation('zoomOutRight')"
+          (swipeup)="startAnimation('rotateOutUpRight')"
+          (swipedown)="startAnimation('flipOutY')">
+  <mat-card-header>
+    <mat-card-title>{{ dashboard.name }}</mat-card-title>
+    <mat-card-subtitle>{{ dashboard.description }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-divider [inset]="true"></mat-divider>
+  <mat-card-actions align="middle">
+    <button mat-raised-button 
+            (tap)="startAnimation('jello')"
+            color="accent"
+            routerLink="{{ dashboard.routerLink }}">
+            DEMO
+    </button>
+  </mat-card-actions>
+</mat-card>

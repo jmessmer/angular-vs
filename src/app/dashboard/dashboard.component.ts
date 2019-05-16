@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Dashboard } from './dashboard';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  scrollers;
+  dashboards: Dashboard;
 
   constructor() { 
-    this.scrollers = [
+    this.dashboards = [
       {
         name: 'Basic Scrolling',
         description: 'Carouser square-rigged scallywag list chase hornswaggle smartly pressgang reef sails Plate Fleet. Nipperkin Davy Jones\' Locker gunwalls hornswaggle gally run a shot across the bow rigging overhaul Sea Legs black jack.',

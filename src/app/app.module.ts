@@ -6,6 +6,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MaterialsModule } from './materials.module';
 import { AgGridModule } from "ag-grid-angular/main";
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { WebcamModule } from 'ngx-webcam';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,9 +19,11 @@ import { BasicInfiniteScrollComponent } from './basic-infinite-scroll/basic-infi
 import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtual-scroll.component';
 import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component';
 import { AdvancedScrollComponent } from './advanced-scroll/advanced-scroll.component';
+import { BasicAvatarScrollComponent } from './basic-avatar-scroll/basic-avatar-scroll.component';
 
 import { ProductCardComponent } from './product-card/product-card.component';
 import { DashboardCardComponent } from './dashboard-card/dashboard-card.component';
+import { CameraComponent } from './camera/camera.component';
 
 import * as Hammer from 'hammerjs';
 
@@ -36,7 +39,8 @@ import { CommerceProductService } from './service/commerce-product.service';
     MaterialsModule,
     ScrollingModule,
     AgGridModule,
-    InfiniteScrollModule
+    InfiniteScrollModule,
+    WebcamModule
   ],
   declarations: [
     AppComponent,
@@ -49,7 +53,9 @@ import { CommerceProductService } from './service/commerce-product.service';
     AgGridScrollComponent,
     ProductCardComponent,
     AdvancedScrollComponent,
-    DashboardCardComponent
+    DashboardCardComponent,
+    CameraComponent,
+    BasicAvatarScrollComponent
   ],
   providers: [
     CommerceProductService

@@ -11,6 +11,11 @@ export class CameraComponent implements OnInit {
   @Output()
   public pictureTaken = new EventEmitter<WebcamImage>();
 
+  blur: boolean;
+  sepia: boolean;
+  invert: boolean;
+  flip: boolean;
+
   // toggle webcam on/off
   public showWebcam = true;
   public allowCameraSwitch = true;
@@ -69,6 +74,29 @@ export class CameraComponent implements OnInit {
 
   public get nextWebcamObservable(): Observable<boolean|string> {
     return this.nextWebcam.asObservable();
+  }
+
+  getStyles() {
+    let filter = '';
+    let transform = '';
+
+    if (this.blur) {
+      filter += 'blur(5px)';
+    }
+    if (this.sepia) {
+      filter += 'sepia(50%)';
+    }
+    if (this.invert) {
+      filter += 'invert(1)';
+    }
+    if (this.flip) {
+      transform += 'scaleX(-1)';
+    }
+
+    return {
+      filter,
+      transform
+    }
   }
 
 }

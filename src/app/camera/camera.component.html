@@ -10,11 +10,15 @@
     </mat-expansion-panel-header>
     <div style="text-align:center">
       <div class="camera">
-        <webcam [height]="300" [width]="300" [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"
+        <webcam [ngStyle]="getStyles()" [height]="300" [width]="300" [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"
         [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable" [videoOptions]="videoOptions" (cameraSwitched)="cameraWasSwitched($event)"
         (initError)="handleInitError($event)"></webcam>
       </div>
-      <br/>
+      <section class="example-section">
+        <mat-checkbox class="example-margin" [checked]="blur" (change)="blur = !blur">blur</mat-checkbox>
+        <mat-checkbox class="example-margin" [checked]="sepia" (change)="sepia = !sepia">sepia</mat-checkbox>
+        <mat-checkbox class="example-margin" [checked]="invert" (change)="invert = !invert">invert</mat-checkbox>
+      </section>
       <button mat-raised-button
               color="primary"
               (click)="triggerSnapshot();">

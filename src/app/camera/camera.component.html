@@ -9,17 +9,17 @@
       </mat-panel-description>
     </mat-expansion-panel-header>
     <div style="text-align:center">
-      <div>
+      <div class="camera">
         <webcam [height]="300" [width]="300" [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"
         [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable" [videoOptions]="videoOptions" (cameraSwitched)="cameraWasSwitched($event)"
         (initError)="handleInitError($event)"></webcam>
-        <br/>
-        <button mat-raised-button
-                color="primary"
-                (click)="triggerSnapshot();">
-                Say Cheese
-        </button>
       </div>
+      <br/>
+      <button mat-raised-button
+              color="primary"
+              (click)="triggerSnapshot();">
+              Say Cheese
+      </button>
     </div>
   </mat-expansion-panel>
 </mat-accordion>

@@ -24,7 +24,7 @@ Display only small subset of the data that is in the viewport and keep changing 
 
 ### ag-Grid
 
-[ag-Grid](https://www.ag-grid.com) is a grid designed to perform smoothly with millions of records.  No specific configuration required.  ag-Grid has Virtual Scroll and Inifinite Scroll.
+[ag-Grid](https://www.ag-grid.com) is a grid designed to perform smoothly with millions of records.  No specific configuration required.  ag-Grid supports both Virtual Scroll and Inifinite Scroll.
 
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-vs)

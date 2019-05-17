@@ -4,11 +4,11 @@ This project demonstrates different techniques in handling large data sets withi
 
 Sometimes developers have to display *thousands of elements* at a time in a table or list.  Adding these many number of items in the **DOM** can cause problems and forces the application to slow down.
 
-## Demo
+## Techniques/Strategies
 
 ### Basic
 
-This is loading everything in the DOM.
+This is not really a technique or a strategy, you are just loading everything in the **DOM**.
 
 ### Pagination
 

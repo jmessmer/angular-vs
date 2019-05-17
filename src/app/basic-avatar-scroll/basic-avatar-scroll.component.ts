@@ -19,13 +19,10 @@ export class BasicAvatarScrollComponent implements OnInit {
         return {
           card: faker.helpers.createCard()
         };
-      }); 
-
-      console.log(this.persons)
+      });
   }
 
   handleImage(webcamImage: WebcamImage) {
-    console.log('RECEIVED IMAGE');
     this.webcamImage = webcamImage;
   }
 

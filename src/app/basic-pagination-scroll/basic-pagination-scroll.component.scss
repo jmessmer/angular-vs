@@ -1,11 +1,4 @@
 .basic-pagination-scroll-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 1vh auto;
-  margin-top: 20px;
-
   .product-card {
     width: 100%;
   }
@@ -13,6 +6,7 @@
 .nav-buttons{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 1vh auto;
   max-width: 400px;
   button {

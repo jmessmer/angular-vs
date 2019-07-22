@@ -1,0 +1,16 @@
+<ng-container>
+  <div class="basic-pagination-scroll-container" *ngIf="visibleProducts.length">
+    <ng-container *ngFor="let product of visibleProducts;"> 
+      <app-product-card class="product-card" [product]="product"></app-product-card> 
+    </ng-container>
+  </div>
+  <app-basic-paginator
+    [disablePrevious]="currentOffset === 0"
+    [disableNext]="currentOffset + currentLimit >= currentTotal"
+    [offset]="currentOffset"
+    [limit]="currentLimit"
+    [getPrevious]="getPrevious.bind(this)"
+    [getNext]="getNext.bind(this)"
+    [total]="currentTotal">
+  </app-basic-paginator>
+</ng-container>

@@ -20,6 +20,7 @@ import { BasicVirtualScrollComponent } from './basic-virtual-scroll/basic-virtua
 import { AgGridScrollComponent } from './ag-grid-scroll/ag-grid-scroll.component';
 import { AdvancedScrollComponent } from './advanced-scroll/advanced-scroll.component';
 import { BasicAvatarScrollComponent } from './basic-avatar-scroll/basic-avatar-scroll.component';
+import { BasicPaginatorComponent } from './basic-paginator/basic-paginator.component';
 
 import { ProductCardComponent } from './product-card/product-card.component';
 import { DashboardCardComponent } from './dashboard-card/dashboard-card.component';
@@ -55,7 +56,8 @@ import { CommerceProductService } from './service/commerce-product.service';
     AdvancedScrollComponent,
     DashboardCardComponent,
     CameraComponent,
-    BasicAvatarScrollComponent
+    BasicAvatarScrollComponent,
+    BasicPaginatorComponent
   ],
   providers: [
     CommerceProductService

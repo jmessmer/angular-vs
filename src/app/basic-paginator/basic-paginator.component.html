@@ -1,0 +1,5 @@
+<div class="nav-buttons">
+  <button [disabled]="disablePrevious" mat-raised-button color="primary" (click)="getPrevious()">Previous</button>
+  <span>Page {{offset / limit + 1}} of {{total / limit}}</span>
+  <button [disabled]="disableNext" mat-raised-button color = "primary" (click)="getNext()">Next</button>
+</div>
